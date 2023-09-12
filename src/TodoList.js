@@ -32,7 +32,7 @@ const TodoList = () => {
     // delete the todo
     const deleteTodo = (id) => {
 
-        const res = deleteTask(id)
+        deleteTask(id)
         const update = data.filter((task) => task.id !== id)
         setData(update)
         console.log(id);
